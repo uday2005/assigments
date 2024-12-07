@@ -6,34 +6,33 @@
     <title>currency converter</title>
     <link rel="stylesheet" href="style.css">
     <script src="javascript.js"> </script>
+    <link rel="icon"  href="logofav.ico">
 </head>
 <body>
+    
     <h1 class="header"> WY Currency Converter </h1>
     <p class="about"> Effortlessly calculate currency values <br> with our user-friendly currency converter. </p>
 
-    <div class="converter"> </div>
-        <span class="amount"> Amount </span> <br>
-
-        <!-- input container  -->
-        <div class="input-conatainer">
-            <input type="number" id="input" min="1" name="inputcurrency" placeholder="100" >
-            <select name="intialdeno" id="inputdeno"> 
-                <option value="INR" >INR </option>
-                <option vlaue="USD">USD </option>
-            </select> 
+    <div class="converter">
+        <div class="input-container">
+        <span>Amount</span>
+        <input type="number" id="input" min="1" name="inputcurr" placeholder="100">
+        <select name="currencydeno1" id="currencydeno1">
+            <option value="INR">INR</option>
+            <option value="USD">USD</option>
+        </select>
         </div>
-        <div class="arrow">⇕</div>
-        <span class="amount"> Amount </span> <br>
-
-        <!-- output container -->
-        <div class="output-conatainer">
-            <input type="number" id="output"  name="outputcurrency"  >
-            <select name="finaldeno" id="finaldeno"> 
-                <option value="INR" >INR </option>
-                <option vlaue="USD">USD </option>
-            </select> 
-        </div>
- 
+        <img src="arrow.svg" alt="Arrow" class="arrow-image">
+        <div class="output-container">
+        <span>Amount</span>
+        <input type="number" id="output" name="outputcurr">
+        <select name="currencydeno2" id="currencydeno2">
+            <option value="INR">INR</option>
+            <option value="USD">USD</option>
+        </select>
+        <div>
     </div>
+    
+    
 </body>
 </html>

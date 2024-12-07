@@ -70,8 +70,9 @@ body {
 
   #input:focus {
 
-    background-color: rgb(20, 153, 209); /* Change the background color on focus */
+    background-color: rgb(59, 183, 236); /* Change the background color on focus */
 
     border: 2px solid rgb(6, 6, 107); /* Optionally change the border color as well */
 
 }
+
