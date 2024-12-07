@@ -1,0 +1,13 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;  /*padding and borders are included in width and height */
+} 
+
+body{
+    display:flex; /*to activate the flex styling */
+    justify-content: center;
+    align-items:center;
+    min-height:100vh;
+    background:#66A5AD
+}
