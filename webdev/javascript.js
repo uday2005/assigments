@@ -3,7 +3,7 @@ const output = document.querySelector('#output')
 const inputdeno = document.querySelector('#currencydeno1')
 const outputdeno = document.querySelector('#currencydeno2')
 
-const URL ='https://api.currencyapi.com/v3/latest?apikey=cur_live_n4R0Avi6LnurogrH1kcLcgBujkKbp7nLtQwiwuQb'
+const URL ='https://api.currencyapi.com/v3/latest?apikey=cur_live_bojRL6surjg4ZhsBn8qarhdpoSJVhE5T31LufQcX'
 
 
 const GetExchangeRates= async () => {
@@ -58,7 +58,6 @@ const  convertcurrency = async () =>
     }
     };
     convertcurrency();
-    
 input.addEventListener('input', convertcurrency); // Trigger on amount input change
 inputdeno.addEventListener('change', convertcurrency); // Trigger on from-currency change
 outputdeno.addEventListener('change', convertcurrency); // Trigger on to-currency change
