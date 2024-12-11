@@ -9,9 +9,8 @@ const URL ='https://api.currencyapi.com/v3/latest?apikey=cur_live_n4R0Avi6Lnurog
 const GetExchangeRates= async () => {
     const response = await fetch(URL); // Fetch the data
     const data = await response.json(); // Parse JSON response
-    console.log(data);
     let currencies = data.data; // Extract the currency object
-    console.log(currencies);
+
 
     return currencies;
     // return Object.keys(currencies);
@@ -36,9 +35,33 @@ const Dropdowns = async () => {
 };
 
 // Call the function to populate both dropdowns
-populateDropdowns();
+Dropdowns();
 
+const  convertcurrency = async () =>
+    {
+    let currencies = await GetExchangeRates();  
+    const fromamount = parseFloat (input.value);
+    const fromcurrency = inputdeno.value;
+    const tocurrency = outputdeno.value;
 
+    const fromLiveCurrencyValue = currencies[fromcurrency].value; // Get the value of the from currency
+    const toLiveCurrencyValue = currencies[tocurrency].value; // Get the value of the to currency
+
+    if (fromamount!= 0)
+    {
+        const converted_amount = (fromamount *(toLiveCurrencyValue))/fromLiveCurrencyValue;
+        output.value = converted_amount.toFixed(2);
+    }
+    else
+    {
+        alert("Please enter a valid amount");
+    }
+    };
+    convertcurrency();
+    
+input.addEventListener('input', convertcurrency); // Trigger on amount input change
+inputdeno.addEventListener('change', convertcurrency); // Trigger on from-currency change
+outputdeno.addEventListener('change', convertcurrency); // Trigger on to-currency change
 
 
 
