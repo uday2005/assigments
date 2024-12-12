@@ -10,12 +10,7 @@ const GetExchangeRates= async () => {
     const response = await fetch(URL); // Fetch the data
     const data = await response.json(); // Parse JSON response
     let currencies = data.data; // Extract the currency object
-
-
-    return currencies;
-    // return Object.keys(currencies);
-
-    // console.log(Object.keys(currencies));
+    return currencies; 
     
 };
 
@@ -50,7 +45,7 @@ const  convertcurrency = async () =>
     if (fromamount!= 0)
     {
         const converted_amount = (fromamount *(toLiveCurrencyValue))/fromLiveCurrencyValue;
-        output.value = converted_amount.toFixed(2);
+        output.value = converted_amount.toFixed(2); //round off to 2 decimal places
     }
     else
     {
@@ -58,16 +53,17 @@ const  convertcurrency = async () =>
     }
     };
     convertcurrency();
-input.addEventListener('input', convertcurrency); // Trigger on amount input change
-inputdeno.addEventListener('change', convertcurrency); // Trigger on from-currency change
-outputdeno.addEventListener('change', convertcurrency); // Trigger on to-currency change
+input.addEventListener('input', convertcurrency); // activates  on amount input change
+inputdeno.addEventListener('change', convertcurrency); // activates on from-currency change
+outputdeno.addEventListener('change', convertcurrency); // activates on to-currency change
 
 
 
+const arrow = document.querySelector('arrow-image')
+const rotateimage = () =>{
+    arrow.addEventListener('click', () =>{
+        arrow.style.transform = `rotate(${90}deg)`;
+    });
 
-
-
-
-
-
+};
 

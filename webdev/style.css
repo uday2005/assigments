@@ -71,7 +71,17 @@ body {
 
     background-color: rgb(59, 183, 236); /* Change the background color on focus */
 
-    border: 2px solid rgb(6, 6, 107); /* Optionally change the border color as well */
+    border: 2px solid rgb(6, 6, 107); /* change the border color on focus */
 
 }
 
+
+.info{
+    margin-right:auto; /*space from right is 100percent */
+    margin-left:40px;
+    margin-top:20px;
+}
+
+.h2{
+    margin-left:-12px;
+}

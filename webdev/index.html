@@ -8,7 +8,6 @@
     <link rel="icon"  href="logofav.ico">
 </head>
 <body>
-
     <h1 class="header"> WY Currency Converter </h1>
     <p class="about"> Effortlessly calculate currency values <br> with our user-friendly currency converter. </p>
 
@@ -22,17 +21,30 @@
             <option value="USD">USD</option>
         </select>
         </div>
+
         <img src="arrow.svg" alt="Arrow" class="arrow-image">
+
         <div class="output-container">
         <span>Amount</span>
-        <input type="number" id="output" name="outputcurr">
+        <input type="number" id="output" name="outputcurr" disabled>
         <select name="currencydeno2" id="currencydeno2">
             <option value="INR">INR</option>
             <option value="USD">USD</option>
         </select>
-        <div>
+        </div>
+
     </div>
-    
+
+    <div class="info">
+        <h2 class="h2">How to USe the currency converter </h2>
+    <ol>
+        <li>Enter the amount you want to convert in input field</li>
+        <li>Select the currency you are converting From in the dropdown Menu </li>
+        <li>Select the currency you are converting To in the dropdown Menu</li>
+        <li>Converted amount will be displayed in the output field</li>
+    </ol>   
+
+    </div>
 <script src="javascript.js"> </script> 
 </body>
 </html>
