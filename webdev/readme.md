@@ -9,7 +9,7 @@ The converter fetches real-time exchange rates and provides an easy-to-use inter
 - HTML
 - CSS
 - JAVASCRIPT
-- Primarily used css flecbox properties.
+- Primarily used css fleXbox properties.
 
 ## Features
 
@@ -27,4 +27,4 @@ The converter fetches real-time exchange rates and provides an easy-to-use inter
 
 ## Extra Information
 
-go to [text](https://github.com/uday2005/assigments/tree/main/webdev) to see commit history of this project
+go to [THIS LINK](https://github.com/uday2005/assigments/tree/main/webdev) to see commit history of this project
