@@ -29,4 +29,6 @@ The converter fetches real-time exchange rates and provides an easy-to-use inter
 
 go to [THIS LINK](https://github.com/uday2005/assigments/tree/main/webdev) to see commit history of this project
 
+## API Key used from
 
+[link](https://app.currencyapi.com/dashboard)
