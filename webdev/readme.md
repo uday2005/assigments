@@ -4,11 +4,12 @@
 A simple web-based currency converter that allows users to convert amounts between different currencies
 The converter fetches real-time exchange rates and provides an easy-to-use interface for quick conversions.
 
-# Technologies used
+## Technologies used
 
-1. HTML
-2. CSS
-3. JAVASCRIPT
+- HTML
+- CSS
+- JAVASCRIPT
+- Primarily used css flecbox properties.
 
 ## Features
 
@@ -23,3 +24,7 @@ The converter fetches real-time exchange rates and provides an easy-to-use inter
 2. Select the currency you are converting from in the "From" dropdown.
 3. Select the currency you are converting to in the "To" dropdown.
 4. The converted amount will be displayed automatically.
+
+## Extra Information
+
+go to [text](https://github.com/uday2005/assigments/tree/main/webdev) to see commit history of this project
