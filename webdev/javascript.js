@@ -3,7 +3,7 @@ const output = document.querySelector('#output')
 const inputdeno = document.querySelector('#currencydeno1')
 const outputdeno = document.querySelector('#currencydeno2')
 
-const URL ='https://api.currencyapi.com/v3/latest?apikey=cur_live_bojRL6surjg4ZhsBn8qarhdpoSJVhE5T31LufQcX'
+const URL ='https://api.currencyapi.com/v3/latest?apikey=cur_live_pp2poG8WM7sB8G6aDuO0Nx37bH1OhTGAnAM0NlJT'
 
 
 const GetExchangeRates= async () => {

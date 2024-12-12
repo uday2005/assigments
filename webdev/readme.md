@@ -25,6 +25,8 @@ The converter fetches real-time exchange rates and provides an easy-to-use inter
 3. Select the currency you are converting to in the "To" dropdown.
 4. The converted amount will be displayed automatically.
 
-## Extra Information
+## Commit History
 
 go to [THIS LINK](https://github.com/uday2005/assigments/tree/main/webdev) to see commit history of this project
+
+
